@@ -12,16 +12,13 @@ Below is the structure of the repository:
 Dart-Console-Projects/
 ├── task_management_system/
 │   └── bin/
-│       ├── task_management_system.dart
-│       ├── task_manager.dart
-│   	└── task.dart
+│   	  └── source codes
 ├── student_management_system/
 │   └── bin/
-│       ├── student_management_system.dart
-│       ├── role.dart
-│       ├── person.dart
-│       ├── teacher.dart
-│   	└── student.dart
+│   	  └── source codes
+├── quiz_system/
+│   └── bin/
+│   	  └── source codes
 ├── LICENSE
 └── README.md
 
