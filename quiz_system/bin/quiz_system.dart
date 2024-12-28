@@ -2,9 +2,10 @@ import 'dart:io';
 
 import 'quiz.dart';
 
-void main(){
-  Quiz quiz = Quiz();
 
+Future<void> addQuestions(Quiz quiz) async {
+
+  Future.delayed(Duration(seconds: 1)); // Simulate a delay
   quiz.addQuestion(
       "What is the capital of France?",
       ["Paris", "London", "Berlin", "Madrid"],
@@ -32,6 +33,11 @@ void main(){
       0, // Correct option index (George Orwell)
       25 // Points
   );
+}
+void main() async{
+  Quiz quiz = Quiz();
+
+  await addQuestions(quiz);
 
 
   double result = -1;
