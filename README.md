@@ -15,6 +15,13 @@ Dart-Console-Projects/
 │       ├── task_management_system.dart
 │       ├── task_manager.dart
 │   	└── task.dart
+├── student_management_system/
+│   └── bin/
+│       ├── student_management_system.dart
+│       ├── role.dart
+│       ├── person.dart
+│       ├── teacher.dart
+│   	└── student.dart
 ├── LICENSE
 └── README.md
 
