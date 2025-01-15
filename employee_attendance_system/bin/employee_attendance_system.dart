@@ -1,5 +1,16 @@
-import 'package:employee_attendance_system/employee_attendance_system.dart' as employee_attendance_system;
+import 'attendance_system.dart';
+import 'employee.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${employee_attendance_system.calculate()}!');
+void main() {
+  EmployeeAttendanceSystem attendanceSystem = EmployeeAttendanceSystem();
+
+  attendanceSystem.addEmployee(Employee(1, 'John Doe', 'Developer'));
+  attendanceSystem.addEmployee(Employee(2, 'Jane Smith', 'Manager'));
+
+  attendanceSystem.markAttendance(1, DateTime.now(), 'Present');
+  attendanceSystem.markAttendance(2, DateTime.now(), 'Absent');
+
+
+  attendanceSystem.attendanceHistory(1);
+  attendanceSystem.attendancePercentageOfEmployees();
 }
